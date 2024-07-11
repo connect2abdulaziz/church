@@ -1,0 +1,737 @@
+@font-face {
+    font-family: 'Libre Basker';
+    src: url('../fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+        url('../fonts/LibreBaskerville-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Basker Italic';
+    src: url('../fonts/LibreBaskerville-Italic.woff2') format('woff2'),
+        url('../fonts/LibreBaskerville-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/body-bg.png);
+    overflow-x: hidden;
+}
+
+.parent {
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 0 2rem;
+    border-top: 1.5px solid rgb(224, 220, 220);
+
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: unset;
+    color: #658361;
+    text-align: center;
+    padding: 30px 0;
+    padding-top: 70px;
+    margin-top: 0;
+    font-family: Libre Basker;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    padding: 40px 0;
+    margin-top: -1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.donate {
+    color: #4f6d45 !important;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.active {
+    border-top: 3px solid #4f6d45;
+}
+.html5{
+    color : white;
+    font-size: 2.2rem;
+        font-family: Libre Basker;
+    font-weight: bold;
+}
+.h5-link{
+    color:  #658361;
+}
+
+.cover {
+    text-align: center;
+    /* background-image: url(cover.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/img_bg_1.jpg);
+    font-family: Libre Basker;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: bottom;
+    padding: 190px;
+    margin-top: 20px;
+}
+
+.cover h2 {
+    font-size: 3rem;
+}
+
+.cover p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.cover .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.cover .wrapper .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.watch-btn {
+    background: #658361;
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 230px;
+    justify-content: center;
+    padding: 23px 0;
+}
+
+.join-btn {
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 230px;
+    padding: 23px 0;
+
+}
+
+.arrow-icon {
+    font-size: 22px;
+}
+.main{
+    background: white;
+}
+.open-days{
+    text-align: center;
+    border-bottom: 1px solid rgb(214, 210, 210);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.open-days h2{
+    margin-top: 0;
+    font-family: Libre Basker Italic;
+    color:black;
+    font-size: 3rem;
+}
+p{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: gray;
+}
+
+.fun-facts{
+    background: #fafafa;
+    text-align: center;
+    padding: 100px 0;
+}
+.facts{
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+.facts h1{
+    font-family: Libre Basker;
+    font-size: 4rem;
+}
+.service-section{
+    background: #fafafa;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    text-align: left;
+}
+.service{
+    width: 25%;
+    margin-right: 20px;
+}
+.service img{
+    width: 450px;
+    height: 360px;
+    padding: 100px 0 50px;
+}
+.service-section h1{
+    font-family: Libre Basker;
+    font-size: 4rem;
+}
+.service h2{
+    font-family: Libre Basker;
+    font-size: 2rem;
+}
+.read-more-btn {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #658361;
+}
+
+.sermons-section{
+    background: #fafafa;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0;
+}
+.sermons{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    text-align: center;
+}
+.sermon{
+    width: 30%;
+}
+.sermon img{
+    width: 460px;
+    height: 400px;
+    padding: 40px 0;
+}
+.sermons-section h1{
+    font-family: Libre Basker;
+    font-size: 4rem;
+}
+.sermon h2{
+    font-family: Libre Basker;
+    font-size: 2rem;
+}
+.sermon p{
+    font-size: 1.6rem;
+}
+.quotes{
+    background: #658361;
+    color: white;
+    padding: 100px 0;
+    font-family: Libre Basker Italic;
+    font-size: 3rem;
+    text-align: center;
+}
+.quotes blockquote{
+    margin: 0 200px;
+}
+.quotes p{
+    color: white;
+    font-family: Libre Basker Italic;
+    font-size: 3rem;
+    padding: 50px 0;
+}
+.dots-second {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#SD {
+    margin: -20px 0 0 15px;
+    width: 12px;
+    height: 12px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#SD:nth-child(2) {
+    background-color: transparent;
+}
+
+.news-section, .events-section{
+    background: #fafafa;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0;
+}
+.news, .events{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    text-align: left;
+}
+.event{
+    width: 25%;
+    margin-right: 20px;
+}
+.date{
+    font-family: Libre Basker Italic;
+}
+.news-section h1, .events-section h1{
+    font-family: Libre Basker;
+    font-size: 4rem;
+}
+.news h2, .events h2{
+    font-family: Libre Basker;
+    font-size: 1.8rem;
+    padding: 0 0 30px;
+}
+p, .news-section p, .events-section p{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.news{
+    gap: 4%;
+    margin: 50px 100px;
+}
+.new{
+    width: 22%;
+}
+.news img{
+    width: 350px;
+    height: 280px;
+}
+
+footer{
+    position: relative;
+    top: 15px;
+    background: #586e72;
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    gap: 5%;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    color: #bdc5c7;
+}
+footer p .unsplash, .h5{
+    color:white;
+    text-decoration: none;
+}
+footer h1{
+    font-family: Libre Basker;
+    font-size: 4rem;
+}
+footer h2{
+    font-family: Libre Basker;
+    font-size: 2rem;
+}
+footer .social{
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 20%;
+}
+.social li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+    .cover{
+        padding: 100px 0;
+    }
+    .nav-links {
+        gap: unset;
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .cover h2 {
+        font-size: 3rem;
+    }
+
+    .cover p {
+        font-size: 1.5rem;
+    }
+    .watch-btn {
+        width: 180px;
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .join-btn {
+        width: 180px;
+        padding: 20px 0;
+        font-size: 16px;
+    }
+    .open-days h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 0 10px;
+    }
+    .fun-facts h1{
+        font-size: 3rem;
+    }
+    .fun-facts{
+        padding: 50px 0;
+    }
+    .facts{
+        gap: 5%;
+    }
+    .news-section, .events-section, .sermons-section, .service-section{
+        padding: 50px 0;
+    }
+    .news, .events, .sermons, .services{
+        display: block;
+        justify-content: center;
+        gap: 0;
+        text-align: center;
+    }
+    
+    .new, .event, .sermon, .service{
+        width: 100%;
+    }
+    .new img, .sermon img, .service img{
+        width: 800px;
+        height: 700px;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .read-more-btn {
+        line-height: 1rem;
+    }
+    .news-section p, .evnents-section p, .sermon p, .service p{
+        margin: 0 50px;
+        font-size: 1rem;
+    }
+    .new h2, .evnent h2, .sermon h2, .service h2{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .date{
+        font-size: 1.2rem;
+        position: relative;
+        top: 70px;
+    }
+    .service p, .sermon p{
+        margin: 0 100px;
+    }
+    .news .date {
+        top: 0px;
+        padding: 10px 0;
+    }
+    .sermons, .news{
+        margin: 0px;
+    }
+    .news h2{
+        padding-bottom: 10px;
+    }
+    .events-section p{
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+    .event p{
+        margin:  0 100px;
+    }
+    .events{
+        gap: 0;
+    }
+    
+    .event h2{
+        position: relative;
+        top:40px
+    }
+    .read-more-btn{
+        font-size: 1.2rem;
+    }
+    .quotes blockquote, .quotes p{
+        margin: 0 20px;
+        font-size: 1.5rem;
+    }
+    #SD{
+        width: 7px;
+        height: 7px;
+    }
+    footer{
+    display: block;
+    }
+    footer h2{
+        font-size: 1.5rem;
+    }
+    footer .social{
+        left: 37%;
+    }
+    .social li a{
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1030px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .cover h2 {
+        font-size: 2.2rem;
+    }
+
+    .cover p {
+        font-size: 1.2rem;
+    }
+    .new img, .sermon img, .service img{
+        width: 650px;
+        height: 550px;
+    }
+    footer .social{
+        left: 30%;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+    
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+@media screen and (max-width: 810px){
+    .cover h2 {
+        font-size: 2.2rem;
+    }
+    .cover p {
+        font-size: 1.2rem;
+    }
+    
+    .new img, .sermon img, .service img{
+        width: 500px;
+        height: 400px;
+    }
+    .quotes blockquote, .quotes p{
+        margin: 0 40px;
+        font-size: 1.3rem;
+    }
+    footer .social{
+        left: 30%;
+    }
+}
+@media screen and (max-width: 600px){
+    .cover h2 {
+        font-size: 2rem;
+    }
+    .cover p {
+        font-size: 1.2rem;
+    }
+    .watch-btn {
+        width: 150px;
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .join-btn {
+        width: 150px;
+        padding: 15px 0;
+        font-size: 14px;
+    }
+    .open-days h2{
+        font-size: 1.5rem;
+    }
+    .quotes blockquote, .quotes p{
+        margin: 0 40px;
+        font-size: 1.2rem;
+    }
+    .facts{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .new img, .sermon img, .service img{
+        width: 400px;
+        height: 300px;
+    }
+    footer .social{
+        left: 15%;
+    }
+    h2, .events-section h2, .news-section h2, .sermons-section h2, .service-section h2{
+        font-size: 1.2rem;
+    }
+    h1, .events-section h1, .news-section h1, .sermons-section h1, .service-section h1{
+        font-size: 2.5rem;
+    }
+
+}
+@media screen and (max-width: 510px){
+    .logo{
+        font-size: 3rem;
+    }
+        .cover h2 {
+        font-size: 1.6rem;
+    }
+    .cover p {
+        font-size: 1rem;
+    }
+    .open-days h2{
+        font-size: 1.2rem;
+    }
+        .new img, .sermon img, .service img{
+        width: 300px;
+        height: 200px;
+    }
+    .facts{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .fun-facts h1{
+        font-size: 2.5rem;
+    }
+    .quotes blockquote, .quotes p{
+        margin: 0 20px;
+        font-size: 1rem;
+    }
+    .read-more-btn{
+        font-size: 1rem;
+    }
+    footer h1{
+    font-size: 3rem;
+    }
+    footer h2{
+        font-size: 1.2rem;
+    }
+    .social li a{
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width: 430px){
+    
+    .watch-btn {
+        width: 120px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .join-btn {
+        width: 120px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .open-days h2{
+        font-size: 1.2rem;
+    }
+    .facts{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .fun-facts h1{
+        font-size: 2rem;
+    }
+    
+    h2, .events-section h2, .news-section h2, .sermons-section h2, .service-section h2{
+        font-size: 1rem;
+    }
+    h1, .events-section h1, .news-section h1, .sermons-section h1, .service-section h1{
+        font-size: 2rem;
+    }
+    p, .events-section p, .news-section p, .sermons-section p, .service-section p{
+        font-size: 12px;
+        margin: 0 50px;
+    }
+    .read-more-btn{
+        font-size: 1rem;
+    }
+    footer h1{
+    font-size: 2.5rem;
+    }
+    footer h2{
+        font-size: 1rem;
+    }
+    footer .social{
+        left: 10%;
+    }
+    
+}
