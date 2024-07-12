@@ -1,5 +1,5 @@
-@font-face {
-  font-family: 'Libre Basker';
+/* @font-face {
+  font-family: '"Libre Baskerville"';
   src: url('../fonts/LibreBaskerville-Regular.woff2') format('woff2'),
     url('../fonts/LibreBaskerville-Regular.woff') format('woff');
   font-weight: normal;
@@ -12,13 +12,13 @@
     url('../fonts/LibreBaskerville-Italic.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   font-family: Arial, sans-serif;
@@ -34,8 +34,12 @@ body {
 }
 
 header {
+  position: fixed;
+  top:0;
+  width: 85%;
+  z-index: 1;
   background: white;
-  position: relative;
+  margin-bottom: 100px;
 }
 
 .navbar {
@@ -56,7 +60,7 @@ header {
   padding: 30px 0;
   padding-top: 70px;
   margin-top: 0;
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville", serif;
 }
 
 .nav-links {
@@ -108,7 +112,7 @@ header {
 .html5 {
   color: white;
   font-size: 2.2rem;
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-weight: bold;
 }
 
@@ -119,12 +123,13 @@ header {
 .cover {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/img_bg_1.jpg);
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   background-position: bottom;
   padding: 190px;
+  padding-top: 450px;
   margin-top: 20px;
 }
 
@@ -191,7 +196,8 @@ header {
 
 .open-days h2 {
   margin-top: 0;
-  font-family: Libre Basker Italic;
+  font-family: "Libre Baskerville";
+  font-style:  Italic;
   color: black;
   font-size: 3rem;
 }
@@ -221,7 +227,7 @@ p {
 }
 
 .facts h1 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 4rem;
 }
 
@@ -254,12 +260,12 @@ p {
 }
 
 .service-section h1 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 4rem;
 }
 
 .service h2 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 2rem;
 }
 
@@ -295,12 +301,12 @@ p {
 }
 
 .sermons-section h1 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 4rem;
 }
 
 .sermon h2 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 2rem;
 }
 
@@ -312,7 +318,8 @@ p {
   background: #658361;
   color: white;
   padding: 100px 0;
-  font-family: Libre Basker Italic;
+  font-family: "Libre Baskerville";
+  font-style: italic;
   font-size: 3rem;
   text-align: center;
 }
@@ -323,12 +330,13 @@ p {
 
 .quotes p {
   color: white;
-  font-family: Libre Basker Italic;
+  font-family: "Libre Baskerville";
+  font-style: italic;
   font-size: 3rem;
   padding: 50px 0;
 }
 
-.dots-second {
+.dots {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -336,7 +344,7 @@ p {
 
 }
 
-#SD {
+#sd {
   margin: -20px 0 0 15px;
   width: 12px;
   height: 12px;
@@ -350,7 +358,7 @@ p {
   -o-border-radius: 50%;
 }
 
-#SD:nth-child(2) {
+#sd:nth-child(2) {
   background-color: transparent;
 }
 
@@ -376,18 +384,19 @@ p {
 }
 
 .date {
-  font-family: Libre Basker Italic;
+  font-family: "Libre Baskerville";
+  font-style: italic;
 }
 
 .news-section h1,
 .events-section h1 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 4rem;
 }
 
 .news h2,
 .events h2 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 1.8rem;
   padding: 0 0 30px;
 }
@@ -433,12 +442,12 @@ footer p .unsplash,
 }
 
 footer h1 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 4rem;
 }
 
 footer h2 {
-  font-family: Libre Basker;
+  font-family: "Libre Baskerville";
   font-size: 2rem;
 }
 
@@ -461,7 +470,7 @@ footer .social {
 /* Tablet and Mobile Views */
 @media screen and (max-width: 1350px) {
   .cover {
-    padding: 100px 0;
+    padding: 400px 0 100px;
   }
 
   .nav-links {
@@ -645,6 +654,9 @@ footer .social {
 }
 
 @media screen and (max-width: 1030px) {
+  .cover{
+    padding-top: 320px;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -658,7 +670,7 @@ footer .social {
     font-size: 2.2rem;
   }
 
-  .parent {
+  header, .parent {
     width: 90%;
   }
 
@@ -718,6 +730,9 @@ footer .social {
   .cover h2 {
     font-size: 2.2rem;
   }
+   .cover{
+    padding-top: 300px;
+  }
 
   .cover p {
     font-size: 1.2rem;
@@ -745,7 +760,9 @@ footer .social {
   .cover h2 {
     font-size: 2rem;
   }
-
+   .cover{
+    padding-top: 220px;
+  }
   .cover p {
     font-size: 1.2rem;
   }
@@ -829,8 +846,8 @@ footer .social {
     width: 300px;
     height: 200px;
   }
-  #SD
-  .facts {
+
+  #SD .facts {
     display: grid;
     grid-template-columns: auto auto;
   }
